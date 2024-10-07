@@ -10,7 +10,7 @@ public class q88_MergeSortedArray {
         System.out.println(Arrays.toString(a));
 
     }
-    // subha isko debug karke submit karna hai
+    // subha isko debug karke submit karna hai [remaining]
 
     static void merge(int[] nums1, int m, int[] nums2, int n) {
 
