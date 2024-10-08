@@ -4,29 +4,35 @@ import java.util.Arrays;
 
 public class q88_MergeSortedArray {
     public static void main(String[] args) {
-    int a[]={1,2,3};
+    int a[]={1,2,3,0,0,0};
     int b[]={2,5,6};
     merge(a,3,b,3);
         System.out.println(Arrays.toString(a));
 
     }
-    // subha isko debug karke submit karna hai [remaining]
 
+
+    // Submission on leetcode and understanding in deep is remaining
     static void merge(int[] nums1, int m, int[] nums2, int n) {
+        int i = m - 1;
+        int j = n - 1;
+        int k = m + n - 1;
 
-        int k=0;
-
-        if(nums1[k]==m){
-            for(int i=k+1;i<(m+n);i++){
-                int j=0;
-                nums1[i]=nums2[j];
-                j++;
+        while (i >= 0 && j >= 0) {
+            if (nums1[i] > nums2[j]) {
+                nums1[k] = nums1[i];
+                i--;
+            } else {
+                nums1[k] = nums2[j];
+                j--;
             }
-        }else{
-            k++;
+            k--;
         }
-        Arrays.sort(nums1);
 
+        while (j >= 0) {
+            nums1[k] = nums2[j];
+            j--;
+            k--;
+        }
     }
-
 }
