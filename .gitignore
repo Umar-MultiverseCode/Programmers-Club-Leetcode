@@ -2,7 +2,7 @@
 .idea/
 *.iml
 
-# Ignore build outputs
+# Ignore build output
 out/
 
 # Ignore OS-specific files
