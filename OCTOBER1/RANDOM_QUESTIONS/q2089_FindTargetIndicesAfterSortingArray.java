@@ -1,7 +1,5 @@
 package RANDOM_QUESTIONS;
 
-import java.util.List;
-
 // https://leetcode.com/problems/find-target-indices-after-sorting-array/description/
 // to do on sunday
 public class q2089_FindTargetIndicesAfterSortingArray {
